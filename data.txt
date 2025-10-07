@@ -1,0 +1,164 @@
+CREATE DATABASE music_website;
+
+USE music_website;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    firstName VARCHAR(50) NOT NULL,
+    lastName VARCHAR(50) NOT NULL,
+    username VARCHAR(25) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    signUpDate DATE NOT NULL,
+    profilePic VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE songs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    director VARCHAR(255) NOT NULL,
+    album VARCHAR(255),
+    genre VARCHAR(255),
+    duration TIME,
+    file_path VARCHAR(255),
+    artwork VARCHAR(255),
+    singer VARCHAR(255),
+    actors VARCHAR(255),
+    release_date DATE
+);
+
+
+use music_website;
+INSERT INTO songs (title, director, album, genre, duration,file_path, artwork, singer, actors, release_date) VALUES
+('Spark-G.O.A.T-MOVIE' 'Yuvan Shankar Raja', 'GOAT', 'western', '00:04:10', 'music/western/Spark-G.O.A.T-MOVIE.mp3', 'assets/images/artwork/western/Spark-G.O.A.T-MOVIE.jpg', 'Yuvan Shankar Raja,Vrusha Balu', 'Joseph Vijay,Meenakshi', '2024-08-03');
+
+
+('Azhagu-Malar-Aa', 'Ilaiyaraaja', 'Vaithegi Kathirunthal', 'classical', '00:05:30', 'music/classical/Azhagu-Malar-Aa.mp3', 'assets/images/artwork/classical/Azhagu-Malar-Aa.jpg', 'Janaki', 'Revathi,Vijayakanth', '1984-08-11');
+
+('Kanne-Kalaima', 'Ilaiyaraaja', 'Moondram Pirai', 'melody', '00:04:04','music/melody/Kanne-Kalaima.mp3' , 'assets/images/artwork/melody/Kanne-Kalaima.jpg', 'K.J Yesudas','Kamal Haasan,Sridevi', '1982-02-19');
+
+
+('Nilaave-Vaa-Sella', 'Ilaiyaraaja', 'Mouna Ragam', 'retro', '00:04:37', 'music/retro/Nilaave-Vaa-Sella.mp3', 'assets/images/artwork/retro/Nilaave-Vaa-Sella.jpg','S.P Balasubrahmanyam', 'Mohan,Revathi', '1986-08-14');
+
+
+('Loosu-Penne-Lo', 'Yuvan Shankar Raja', 'Vallavan', 'sad', '00:06:47', 'music/sad/Loosu-Penne-Lo.mp3','assets/images/artwork/sad/Loosu-Penne-Lo.jpg', 'Silambarasan, Blaaze', 'Silambarasan,Nayanthara', '2006-06-01');
+
+('Rendu-Kaadhal', 'Anirudh Ravichander', 'Kaathuvaakula Rendu Kaadhal', 'sad', '00:04:20', 'music/sad/Rendu-Kaadhal.mp3', 'assets/images/artwork/sad/Rendu-Kaadhal.jpg','Anirudh Ravichander, Shakthisree Gopalan, Aishwarya Suresh Bindra','Vijay Sethupathi, Nayanthara and Samantha ', '2021-02-14');
+
+
+
+('Kaattrae-En-Vaas', 'A.R. Rahman', 'Rhythm', 'melody', '00:06:20', 'music/melody/Kaattrae-En-Vaas.mp3', 'assets/images/artwork/melody/Kaattrae-En-Vaas.jpg', 'P. Unnikrishnan, Kavita Krishnamurthy', 'Arjun,Jothika', '2000-09-15');
+
+
+('Vaada-Bin-Laada', 'Yuvan Shankar Raja', 'Mankatha', 'western', '00:04:29', 'music/western/Vaada-Bin-Laada.mp3', 'assets/images/artwork/western/Vaada-Bin-Laada.jpg', 'Krish,Suchitra', 'Ajith Kumar,Trisha', '2011-08-10');
+
+('Evan-Di-Unna-Pethan', 'Yuvan Shankar Raja', 'Vaanam', 'western', '00:05:58', 'music/western/Evan-Di-Unna-Pethan.mp3', 'assets/images/artwork/western/Evan-Di-Unna-Pethan.jpg','Silambarasan,Yuvan Shankar Raja', 'Silambarasan,Anushka shetty', '2010-12-01');
+
+
+('Eno-Kangal', 'Yuvan Shankar Raja', 'Kalvanyn Kaadhali', 'western', '00:05:30', 'music/western/Eno-Kangal.mp3', 'assets/images/artwork/western/Eno-Kangal.jpg','Sadhana Sargam,Yuvan Shankar Raja', 'S.J. Suryah,Nayanthara', '2005-01-01');
+
+('Adiyae-Kolluthey','Harris Jayaraj','Vaaranam Aayiram', 'western', '00:05:17', 'music/western/Adiyae-Kolluthey.mp3', 'assets/images/artwork/western/Adiyae-Kolluthey.jpg', 'Krish,Benny Dayal,Shruti Haasan', 'Suriya,Simran,Sameera Reddy','2008-08-30');
+
+
+('Kutti-Story', 'Anirudh Ravichander', 'Master', 'motivational', '00:05:01', 'music/motivational/Kutti-Story.mp3', 'assets/images/artwork/motivational/Kutti-Story.jpg', 'Joseph Vijay,Anirudh Ravichander', 'Joseph Vijay,Malavika Mohan', '2021-01-20');
+
+
+('Damakku-Damakku', 'Harris Jayaraj', 'Aadhavan ', 'motivational', '00:04:55', 'music/motivational/Damakku-Damakku.mp3', 'assets/images/artwork/motivational/Damakku-Damakku.jpg', 'Benny Dayal', 'Suriya,Nayanthara', '2009-09-09');
+
+('Edhirthu-Nil', 'Yuvan Shankar Raja', 'Biriyani', 'motivational', '00:04:26', 'music/motivational/Edhirthu-Nil.mp3', 'assets/images/artwork/motivational/Edhirthu-Nil.jpg', 'G.V.Prakash Kumar, Vijay Antony, D.Imman, S.Thaman,Yuvan Shankar Raja', 'Karthi,Premgi Amaren,Hansika Motwani', '2013-08-21'); 
+
+
+('Singappenney', 'A.R. Rahman', 'Bigil', 'motivational', '00:06:04', 'music/motivational/Singappenney.mp3','assets/images/artwork/motivational/Singappenney.jpg','A.R.Rahman,Shashaa Tirupati','Joseph Vijay,Nayanthara','2019-07-23');
+
+
+
+('Ethir-Neechal', 'Anirudh Ravichander', 'Ethir-Neechal', 'motivational', '00:04:31', 'music/motivational/Ethir-Neechal.mp3', 'assets/images/artwork/motivational/Ethir-Neechal.jpg', 'Anirudh Ravichander,YOYO Honey Singh,Hip Hop Tamizha Adhi', 'Siva Karthikeyan,Priya Anand', '2012-01-11');
+
+ 
+('Ella-Pugazhum', 'A.R. Rahman', 'Azhagiya Tamil Magan', 'motivational', '00:05:30', 'music/motivational/Ella-Pugazhum.mp3', 'assets/images/artwork/motivational/Ella-Pugazhum.jpg', 'A.R. Rahman', 'Joseph Vijay,Shriya Saran,Namitha', '2007-11-08'); 
+
+('Ilaiya-Nila', 'Ilaiyaraaja' ,'Payanangal Mudivathillai', 'retro', '00:04:39', 'music/retro/Ilaiya-Nila.mp3', 'assets/images/artwork/retro/Ilaiya-Nila.jpg', 'S. P. Balasubrahmanyam', 'Mohan,Poornima Jayaram', '1982-02-26');
+
+('Vaa-Vennila', 'Ilaiyaraaja', 'Mella Thirandhathu Kadhavu', 'retro', '00:04:43', 'music/retro/Vaa-Vennila.mp3', 'assets/images/artwork/retro/Vaa-Vennila.jpg', 'S. P. Balasubrahmanyam,S. Janaki', 'Mohan,Radha,Amala', '1986-09-12');
+
+('Raasaathi-Unna', 'Ilaiyaraaja', 'Vaithegi Kathirunthal', 'sad', '00:04:23', 'music/sad/Raasaathi-Unna.mp3', 'assets/images/artwork/sad/Raasaathi-Unna.jpg', 'Jayachandran','Vijayakanth, Revathi', '1984-10-23');
+
+('Yaaro-Manathile', 'Harris Jayaraj', 'Dhaam Dhoom', 'sad', '00:05:03', 'music/sad/Yaaro-Manathile.mp3', 'assets/images/artwork/sad/Yaaro-Manathile.jpg', 'Bombay Jayashri,Krish', 'Jayam Ravi,Kangana Ranaut,Lakshmi Rai', '2008-08-29'),
+('Kaadhal-Rojave', 'A.R. Rahman', 'Roja', 'sad', '00:05:03', 'music/sad/Kaadhal-Rojave.mp3', 'assets/images/artwork/sad/Kaadhal-Rojave.jpg', 'S. P. Balasubrahmanyam,Sujatha Mohan', 'Madhubala,Arvind Swamy', '1992-08-15');
+
+
+
+
+
+('Mannil Indha' , 'Ilaiyaraaja' ,'Keladi Kanmani', 'retro', '00:04:25', 'music/retro/Mannil Indha.mp3', 'assets/images/artwork/retro/Mannil Indha.jpg', 'S.P. Balasubrahmanyam, Ilaiyaraaja' , 'S.P. Balasubrahmanyam,Raadhika', '1990-07-27');
+
+
+('Yen-Iniya-Pon-Nilave', 'Ilaiyaraaja', 'MooduPani', 'retro', '00:04:18', 'music/retro/Yen-Iniya-Pon-Nilave.mp3', 'assets/images/artwork/retro/Yen-Iniya-Pon-Nilave.jpg', 'Yesudas', 'Shobha,Prathap Pothan,Mohan', '1980-11-06');
+
+
+('Kannum-Kannum-Kalanthu', 'C. Ramchandra,R.Vaidyanathan', 'Vanjikottai Valiban', 'classical', '00:07:57', 'music/classical/Kannum Kannum Kalanthu.mp3', 'assets/images/artwork/classical/Kannum Kannum Kalanthu.jpg', 'P. Leela,Jikki', 'Gemini Ganesan,Vyjayanthimala,Padmini', '1958-04-12');
+
+
+('Minsara-Poove', 'A.R. Rahman', 'Padayappa', 'classical', '00:06:19', 'music/classical/Minsara-Poove.mp3', 'assets/images/artwork/classical/Minsara-Poove.jpg', 'Srinivas, Nithyasree Mahadevan, Palakkad Sreeram, Hariharan', 'Rajinikanth, Ramya Krishna, Sivaji Ganesan, Soundarya', '1999-04-10');
+
+
+('Katril+Varum+Geethame', 'Ilaiyaraaja', 'Oru Naal Oru Kanavu', 'classical', '00:04:32', 'music/classical/Katril+Varum+Geethame.mp3', 'assets/images/artwork/classical/Katril+Varum+Geethame.jpg', 'Hariharan, Shreya Ghosal, Bhavadharani & Sadhana Sargam', 'Srikanth,Sonia Agarwal', '2005-08-26');
+
+ 
+('Kannodu Kaanberallam', 'A.R. Rahman', 'Jeans', 'classical', '00:05:12', 'music/classical/Kannodu Kaanberallam.mp3', 'assets/images/artwork/classical/Kannodu Kaanberallam.jpg', 'Nithyashree', 'Prashanth,Aishwarya Rai', '1998-04-01');
+
+
+('Vennilave', 'Harris Jayaraj', 'Thuppakki', 'melody', '00:04:53', 'music/melody/Vennilave.mp3', 'assets/images/artwork/melody/Vennilave.jpg', 'Hariharan,Bombay Jayashri', 'Joseph Vijay,Kajal Aggarwal', '2012-10-10'),
+
+
+('Hayyoda', 'Anirudh Ravichander', 'Jawan', 'melody', '00:03:45', 'music/melody/Hayyoda.mp3', 'assets/images/artwork/melody/Hayyoda.jpg', 'Anirudh Ravichander,Priya Mali', 'Shah Rukh Khan,Nayanthara', '2023-12-11'),
+
+
+('Kaattumalli', 'Ilaiyaraaja', 'Kattumalli', 'melody', '00:04:15', 'music/melody/Kaattumalli.mp3', 'assets/images/artwork/melody/Kaattumalli.jpg', 'Ilaiyaraaja,Ananya Bhat', 'Soori,Bhavani', '2023-12-11'),
+
+
+('Kaadhal-Yaanai', 'Harris Jayaraj', 'Anniyan', 'western', '00:05:48', 'music/western/Kaadhal-Yaanai.mp3', 'assets/images/artwork/western/Kaadhal-Yaanai.jpg', 'Nakul,Nelwyn,Prakash GV', 'Vikram,Sadha', '2005-06-17');
+
+
+CREATE TABLE playlists (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE playlist_songs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    playlist_id INT NOT NULL,
+    song_id INT NOT NULL,
+    FOREIGN KEY (playlist_id) REFERENCES playlists(id) ON DELETE CASCADE,
+    FOREIGN KEY (song_id) REFERENCES songs(id) ON DELETE CASCADE
+);
+
+
+CREATE TABLE listening_history (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,  -- Changed from username to user_id for better database normalization
+    song_id INT NOT NULL,
+    listened_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,  -- Added user_id foreign key
+    FOREIGN KEY (song_id) REFERENCES songs(id) ON DELETE CASCADE
+);
+
+
+CREATE TABLE contact_queries (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,  -- Reference to the user who submitted the query
+    subject VARCHAR(255) NOT NULL,
+    message TEXT NOT NULL,
+    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE  -- Added foreign key to users table
+);
+
+
+CREATE TABLE admin (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    admin name VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
