@@ -1,0 +1,624 @@
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* General body and font settings */
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+	font-size: 3em;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center text within the container */
+	color: #fff;
+}
+
+/* Welcome Page */
+.welcome-container {
+    text-align: center;
+    margin-top: 50px;
+	 color: #fff;
+}
+
+.welcome-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.welcome-container a:hover {
+    background-color: #0056b3;
+}
+
+/* Founder section */
+.founder-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 15px;
+	 color: #fff;
+}
+
+.founder-section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #ffdd57; 
+    display: block; 
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.founder-section h3 {
+    color: #fff; 
+    margin-top: 10px;
+    font-size: 1.5em; 
+}
+
+.founder-section p {
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 1.6;
+    max-width: 600px; 
+    margin: 10px auto 0; 
+}
+
+/* Admin Button */
+.admin-button {
+    background-color: #ffdd57;
+    color: #000;
+}
+
+.admin-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Admin Credentials Section */
+.admin-credentials {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    text-align: left;
+	 color: #fff;
+}
+
+.admin-credentials h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.admin-credentials p {
+    margin: 5px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff; 
+}
+
+.admin-credentials small {
+    color: #ddd;
+}
+
+.admin-credentials-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.admin-credentials-link:hover .admin-credentials {
+    background-color: rgba(0, 0, 0, 0.7); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Admin Dashboard Container */
+.admin-dashboard-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* Dashboard Heading */
+.admin-dashboard-container h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* Summary Section */
+.admin-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.admin-summary div {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+	 color: #fff;
+}
+
+.admin-summary div h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.admin-summary div p {
+    margin-top: 10px;
+    font-size: 1.2em;
+	color: #fff;
+}
+
+/* User Details Section */
+.admin-user-details {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+	color: #fff;
+
+}
+
+.admin-user-details h3 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.admin-user-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-user-details table th,
+.admin-user-details table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+	color: #fff;
+
+}
+
+.admin-user-details table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.admin-user-details table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Admin Dashboard Styles */
+.admin-dashboard {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.admin-dashboard a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.admin-dashboard a:hover {
+    background-color: #218838;
+}
+
+/* User Actions */
+.user-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+		color: #fff;
+
+}
+
+.user-actions .button {
+    background-color: #ffdd57;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.user-actions .button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Speciality section */
+.speciality-section {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #fff; 
+}
+
+.speciality-section h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.speciality-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+		color: #fff;
+
+}
+
+/* History block */
+.history-block {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    text-align: left;
+		color: #fff;
+
+}
+
+.history-block h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #ffdd57;
+}
+
+.history-block p {
+    margin: 5px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff; 
+}
+
+.history-block small {
+    color: #ddd;
+}
+
+.history-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.history-link:hover .history-block {
+    background-color: rgba(0, 0, 0, 0.7); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar .logo {
+    width: 100px;
+    height: 50px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Each category block */
+.category {
+    flex: 1 1 200px; 
+    max-width: 200px;
+    text-align: center;
+}
+
+/* Category image */
+.category-image {
+    width: 100%; 
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Reduce space between category name and image */
+.category h3 {
+    margin-bottom: 10px; 
+}
+
+/* Song list styling */
+.song-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; 
+}
+
+.song-list li {
+    margin: 10px 0;
+    display: inline-block; 
+    text-align: center; 
+}
+
+.song-image {
+    width: 100px;
+    height: 100px;
+}
+
+.song-details {
+    margin-top: 20px;
+}
+
+/* Song Item Styling */
+.song-list li a {
+    color: #ffffff; /* Change the color to white */
+    text-decoration: none; /* Optional: Remove underline */
+    font-weight: bold;
+}
+
+.song-list li a:hover {
+    color: #ffdd57; /* Optional: Change color on hover */
+}
+
+
+/* Form styling */
+form {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 8px; 
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px; 
+    text-align: left; 
+}
+
+form input {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    background: #fff; 
+    color: #333;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.login-form-container {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: #000;
+    text-align: center;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginForm label, #loginForm input {
+    width: 80%;
+    margin: 10px 0;
+}
+
+#loginForm button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#loginForm button:hover {
+    background-color: #555;
+}
+
+/* Director section */
+.directors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.director {
+    margin: 20px;
+    text-align: center;
+}
+
+.director img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Button Styles */
+.button {
+    background-color: #333;
+    color: white;
+    padding: 20px 30px; /* Increased padding for larger buttons */
+    text-decoration: none;
+    margin: 10px; /* Increased margin to separate the buttons */
+    border-radius: 8px; /* Slightly larger border radius */
+    font-size: 1.2em; /* Increased font size for better visibility */
+}
+
+.button:hover {
+    background-color: #ffdd57;
+    color: black;
+}
+
+/* About Us Page Styles */
+.about-text {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffdd57; 
+    font-family: 'Merriweather', serif; 
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-text h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    line-height: 1.4;
+    color: #ffffff; 
+}
+
+/* Search Form */
+nav .search-form {
+    display: flex;
+    align-items: center;
+}
+
+nav .search-form input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+}
+
+nav .search-form button {
+    padding: 5px;
+    font-size: 16px;
+    background-color: #ffdd57;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .founder-section img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .category {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .director img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .category {
+        flex-basis: calc(100% - 10px); 
+    }
+}
